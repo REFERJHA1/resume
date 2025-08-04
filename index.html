@@ -305,20 +305,74 @@
     </div>
 
   <script>
-        // original openTab function code
+       // original openTab function code
         function openTab(event, tabName) {
             let i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tab-content");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tab-button");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].classList.remove("active");
-            }
-            document.getElementById(tabName).style.display = "block";
+@@ -301,68 +320,83 @@ <h4 class="font-bold text-lg mb-2 text-amber-700 flex items-center"><span class=
             event.currentTarget.classList.add("active");
         }
+
+        const ctx = document.getElementById('skillsRadarChart').getContext('2d');
+        const skillsRadarChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Problem-Solving', 'Client/People Skills', 'Data & Analytics', 'Technical Aptitude', 'HR Knowledge (Aspirational)'],
+                datasets: [{
+                    label: 'Skill Level',
+                    data: [8, 8.5, 7.5, 8, 6],
+                    backgroundColor: 'rgba(245, 158, 11, 0.2)',
+                    borderColor: 'rgba(245, 158, 11, 1)',
+                    pointBackgroundColor: 'rgba(245, 158, 11, 1)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgba(245, 158, 11, 1)'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                    return label.join(' ');
+                                } else {
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    r: {
+                        angleLines: {
+                            color: 'rgba(0, 0, 0, 0.1)'
+                        },
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.1)'
+                        },
+                        pointLabels: {
+                            font: {
+                                size: 12,
+                                weight: '500'
+                            },
+                            color: '#4a5568'
+                        },
+                        ticks: {
+                            backdropColor: 'transparent',
+                            stepSize: 2
+                        },
+                        min: 0,
+                        max: 10
+                    }
+                }
 
         //  new JavaScript code for the chatbot goes right here
         // Chatbot functionality
