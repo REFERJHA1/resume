@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Professional Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add your CSS or framework links here -->
+</head>
+<body>
+  <section>
+    <h1>5+</h1>
+    <p>
+      Businesses Supported<br>
+      via freelance IT and workflow streamlining.
+    </p>
+    <h1>15%</h1>
+    <p>
+      Audience Growth<br>
+      achieved for clients through data-driven social media campaigns.
+    </p>
+    <h1>3</h1>
+    <p>
+      Years of Experience<br>
+      in self-driven freelance and analytical roles during my academic years.
+    </p>
+  </section>
+  
+  <section>
+    <h2>Key Achievements</h2>
+    <p>A snapshot of my impactful contributions and demonstrated capabilities across my diverse experiences.</p>
+
+    <h3>Workflow &amp; IT System Optimization</h3>
+    <p>I have successfully supported 5+ businesses in streamlining their workflows and IT systems, directly enhancing operational efficiency and user experience.</p>
+
+    <h3>Digital Audience Growth</h3>
+    <p>I designed and implemented social media campaigns that resulted in a 15% audience growth for my clients, demonstrating effective digital marketing and analytical skills.</p>
+
+    <h3>Academic Resilience &amp; Learning Agility</h3>
+    <p>I adapted quickly to demanding academic and project challenges, showcasing strong learning ability and resilience under pressure while managing multiple concurrent commitments.</p>
+  </section>
+
+  <section>
+    <h2>Academic Foundation</h2>
+    <p>My academic journey provides a strong theoretical and foundational base for my professional aspirations, demonstrating consistent learning and diligence.</p>
+
+    <h3>Bachelor of Business Administration (BBA)</h3>
+    <p>J.L.N. College</p>
+    <p>June 2023 – May 2026 (Expected Graduation)</p>
+    <p>I am building a strong foundation in core business principles, management strategies, and organizational behavior.</p>
+
+    <h3>Senior Secondary (12th Grade)</h3>
+    <p>H.B.S.E. (Board of School Education Haryana), Government Model Senior Secondary School (Sector 28)</p>
+    <p>January 2021 – June 2022 | Percentage: 81.4%</p>
+    <p>Field of Study: Commerce with Economics</p>
+
+    <h3>Secondary (10th Grade)</h3>
+    <p>H.B.S.E. (Board of School Education Haryana), Government Model Senior Secondary School (Sector 28)</p>
+    <p>January 2019 – June 2020 | Percentage: 71.6%</p>
+    <p>Field of Study: General Secondary Education</p>
+  </section>
+
+  <section>
+    <h2>Training &amp; Certifications</h2>
+    <p>My commitment to continuous learning is demonstrated through specialized training programs, enhancing my practical skills in diverse sectors.</p>
+
+    <h3>4-year Diploma - Trainee Associate (RAS/Q0103) in Retail</h3>
+    <p>Skill India</p>
+    <p>[Provide Dates if available, e.g., Month Year – Month Year]</p>
+    <p>I focused on retail operations, customer service, and sales processes, gaining hands-on experience in the retail environment.</p>
+
+    <h3>4-year Diploma - Trainee in IT Sector</h3>
+    <p>Skill India</p>
+    <p>[Provide Dates if available, e.g., Month Year – Month Year]</p>
+    <p>I gained foundational knowledge in IT systems, software, and technical support, developing practical troubleshooting abilities.</p>
+  </section>
+
+  <section>
+    <h2>Proactive Journey: A Timeline of Growth</h2>
+    <h3>BBA Final Year Student</h3>
+    <p>J.L.N. College | June 2023 – May 2026 (Expected)</p>
+    <p>I am building a strong foundation in core business principles, management strategies, and organizational behavior.</p>
+
+    <h3>Freelancer - IT Services</h3>
+    <p>Self-Employed | June 2020 – January 2021</p>
+    <p>I provided technical solutions, managed budgets, and executed digital marketing, demonstrating early entrepreneurial drive.</p>
+
+    <h3>Digital Asset Analyst</h3>
+    <p>Personal Initiative | January 2019 – December 2021</p>
+    <p>I conducted in-depth research and analysis of emerging technologies, showcasing strong analytical and self-learning capabilities.</p>
+  </section>
+
+  <section>
+    <h2>Translating Experience into HR Value</h2>
+    <p>This section deconstructs my diverse experiences to show their direct relevance to core HR functions. Use the tabs to explore how my past roles have prepared me for a future in HR.</p>
+
+    <h3>Core Competencies from IT Freelancing</h3>
+    <ul>
+      <li><strong>Process Optimization:</strong> I streamlined workflows for 5+ businesses, a skill directly applicable to improving HRIS and internal processes.</li>
+      <li><strong>Data Integrity &amp; Compliance:</strong> I managed project budgets and financial records, demonstrating the attention to detail required for payroll, benefits, and HR compliance.</li>
+      <li><strong>Talent Attraction:</strong> I grew client audiences by 15% via social media, a technique transferable to employer branding and digital talent sourcing.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>A Well-Rounded Skill Profile</h2>
+    <p>This chart visualizes the balance between my developed skills and my aspirational learning areas, highlighting my readiness for an entry-level role and my potential for future growth.</p>
+  </section>
+
+  <section>
+    <h2>Language Proficiency</h2>
+    <p>My multilingual abilities enhance my capacity for effective communication in diverse professional environments.</p>
+    <ul>
+      <li>🇬🇧 English - Advanced</li>
+      <li>🇮🇳 Hindi - Proficient</li>
+      <li>🗣️ Maithili - Proficient</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>The Strategic Fit: A Future-Ready HR Professional</h2>
+    <h4>💡Entrepreneurial Mindset</h4>
+    <p>My freelance background demonstrates proactivity, resourcefulness, and a problem-solving approach. I don't wait for instructions; I identify needs and deliver solutions—a valuable trait in a dynamic corporate environment.</p>
+
+    <h4>🤖Tech-Forward Vision &amp; Future Aspirations</h4>
+    <p>My specific interest in integrating AI into HR processes is a significant differentiator. I am keen to explore areas like HR Analytics, Talent Management strategies, and Employee Engagement, demonstrating a proactive approach to the future of the profession and how I can add strategic, data-driven value.</p>
+  </section>
+</body>
+</html>
