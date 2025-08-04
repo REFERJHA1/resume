@@ -1,128 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Professional Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Add your CSS or framework links here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: My Strategic Profile for HR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fefcfb;
+            color: #3f3f46;
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #f3f4f6;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+        }
+        .tab-button.active {
+            background-color: #f59e0b;
+            color: #ffffff;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 90vw;
+            max-height: 500px;
+        }
+        @media (min-width: 640px) {
+            .chart-container {
+                height: 500px;
+            }
+        }
+    </style>
 </head>
-<body>
-  <section>
-    <h1>5+</h1>
-    <p>
-      Businesses Supported<br>
-      via freelance IT and workflow streamlining.
-    </p>
-    <h1>15%</h1>
-    <p>
-      Audience Growth<br>
-      achieved for clients through data-driven social media campaigns.
-    </p>
-    <h1>3</h1>
-    <p>
-      Years of Experience<br>
-      in self-driven freelance and analytical roles during my academic years.
-    </p>
-  </section>
-  
-  <section>
-    <h2>Key Achievements</h2>
-    <p>A snapshot of my impactful contributions and demonstrated capabilities across my diverse experiences.</p>
+<body class="antialiased">
 
-    <h3>Workflow &amp; IT System Optimization</h3>
-    <p>I have successfully supported 5+ businesses in streamlining their workflows and IT systems, directly enhancing operational efficiency and user experience.</p>
+    <div class="container mx-auto p-4 sm:p-6 md:p-8">
 
-    <h3>Digital Audience Growth</h3>
-    <p>I designed and implemented social media campaigns that resulted in a 15% audience growth for my clients, demonstrating effective digital marketing and analytical skills.</p>
+        <header class="text-center mb-12 md:mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800">Abhishek Kumar</h1>
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-600 mt-2">A Strategic Profile for HR</h2>
+            <p class="text-lg md:text-xl mt-3 text-gray-600 max-w-3xl mx-auto">An interactive analysis of my proactive BBA student experience with diverse technical and entrepreneurial background, preparing me for a career in modern Human Resources.</p>
+            <div class="flex justify-center space-x-4 mt-6 text-gray-700">
+                <span>📧 jjhaabhi123@gmail.com</span>
+                <span>🔗 <a href="https://linkedin.com/in/abhishekjha-hrm" target="_blank" class="text-amber-600 hover:underline">My LinkedIn Profile</a></span>
+            </div>
+            <div class="text-center mt-4">
+    <a href="https://raw.githubusercontent.com/REFERJHA1/my-resume/main/resume_with_qr.pdf" download class="inline-block bg-amber-600 text-white px-5 py-2 rounded-lg shadow hover:bg-amber-700 transition">
+        📄 Download My Resume
+    </a>
+</div>
+        </header>
 
-    <h3>Academic Resilience &amp; Learning Agility</h3>
-    <p>I adapted quickly to demanding academic and project challenges, showcasing strong learning ability and resilience under pressure while managing multiple concurrent commitments.</p>
-  </section>
+        <main>
+            <section id="kpis" class="mb-12 md:mb-16">
+                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                     <div class="card p-6 rounded-lg">
+                         <p class="text-5xl font-bold text-amber-600">5+</p>
+                         <p class="mt-2 font-semibold text-gray-700">Businesses Supported</p>
+                         <p class="text-sm text-gray-500">via my freelance IT and workflow streamlining.</p>
+                     </div>
+                     <div class="card p-6 rounded-lg">
+                         <p class="text-5xl font-bold text-amber-600">15%</p>
+                         <p class="mt-2 font-semibold text-gray-700">Audience Growth</p>
+                         <p class="text-sm text-gray-500">I achieved for clients through data-driven social media campaigns.</p>
+                     </div>
+                     <div class="card p-6 rounded-lg">
+                         <p class="text-5xl font-bold text-amber-600">3</p>
+                         <p class="mt-2 font-semibold text-gray-700">Years of Experience</p>
+                         <p class="text-sm text-gray-500">in self-driven freelance and analytical roles during my academic years.</p>
+                     </div>
+                 </div>
+            </section>
 
-  <section>
-    <h2>Academic Foundation</h2>
-    <p>My academic journey provides a strong theoretical and foundational base for my professional aspirations, demonstrating consistent learning and diligence.</p>
+            <section id="achievements" class="mb-12 md:mb-16 scroll-mt-24">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">My Key Achievements</h2>
+                <p class="max-w-3xl mx-auto text-center text-gray-600 mb-10">A snapshot of my impactful contributions and demonstrated capabilities across my diverse experiences.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="card p-6 rounded-lg flex items-start">
+                        <span class="text-3xl mr-4 text-amber-600">✔️</span>
+                        <div>
+                            <h3 class="font-bold text-xl mb-1 text-amber-700">Workflow & IT System Optimization</h3>
+                            <p class="text-gray-700">I successfully supported 5+ businesses in streamlining their workflows and IT systems, directly enhancing their operational efficiency and user experience.</p>
+                        </div>
+                    </div>
+                    <div class="card p-6 rounded-lg flex items-start">
+                        <span class="text-3xl mr-4 text-amber-600">📈</span>
+                        <div>
+                            <h3 class="font-bold text-xl mb-1 text-amber-700">Digital Audience Growth</h3>
+                            <p class="text-gray-700">I designed and implemented social media campaigns that resulted in a 15% audience growth for clients, demonstrating effective digital marketing and analytical skills.</p>
+                        </div>
+                    </div>
+                    <div class="card p-6 rounded-lg flex items-start md:col-span-2">
+                        <span class="text-3xl mr-4 text-amber-600">🧠</span>
+                        <div>
+                            <h3 class="font-bold text-xl mb-1 text-amber-700">Academic Resilience & Learning Agility</h3>
+                            <p class="text-gray-700">I adapted quickly to demanding academic and project challenges, showcasing my strong learning ability and resilience under pressure while managing multiple concurrent commitments.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <h3>Bachelor of Business Administration (BBA)</h3>
-    <p>J.L.N. College</p>
-    <p>June 2023 – May 2026 (Expected Graduation)</p>
-    <p>I am building a strong foundation in core business principles, management strategies, and organizational behavior.</p>
+            <section id="education" class="mb-12 md:mb-16 scroll-mt-24">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">My Academic Foundation</h2>
+                <p class="max-w-3xl mx-auto text-center text-gray-600 mb-10">My academic journey provides a strong theoretical and foundational base for my professional aspirations, demonstrating consistent learning and diligence.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="card p-6 rounded-lg md:col-span-2">
+                        <h3 class="font-bold text-xl mb-2 text-amber-700">Bachelor of Business Administration (BBA)</h3>
+                        <p class="text-gray-700 font-semibold">J.L.N. College</p>
+                        <p class="text-sm text-gray-600">June 2023 – May 2026 (Expected Graduation)</p>
+                        <p class="text-gray-700 mt-2">I am building a strong foundation in core business principles, management strategies, and organizational behavior.</p>
+                    </div>
+                    <div class="card p-6 rounded-lg">
+                        <h3 class="font-bold text-xl mb-2 text-amber-700">Senior Secondary (12th Grade)</h3>
+                        <p class="text-gray-700 font-semibold">H.B.S.E. (Board of School Education Haryana), Government Model Senior Secondary School (Sector 28)</p>
+                        <p class="text-sm text-gray-600">January 2021 – June 2022 | Percentage: 81.4%</p>
+                        <p class="text-gray-700 mt-2">Field of Study: Commerce with Economics</p>
+                    </div>
+                    <div class="card p-6 rounded-lg">
+                        <h3 class="font-bold text-xl mb-2 text-amber-700">Secondary (10th Grade)</h3>
+                        <p class="text-gray-700 font-semibold">H.B.S.E. (Board of School Education Haryana), Government Model Senior Secondary School (Sector 28)</p>
+                        <p class="text-sm text-gray-600">January 2019 – June 2020 | Percentage: 71.6%</p>
+                        <p class="text-gray-700 mt-2">Field of Study: General Secondary Education</p>
+                    </div>
+                </div>
+            </section>
 
-    <h3>Senior Secondary (12th Grade)</h3>
-    <p>H.B.S.E. (Board of School Education Haryana), Government Model Senior Secondary School (Sector 28)</p>
-    <p>January 2021 – June 2022 | Percentage: 81.4%</p>
-    <p>Field of Study: Commerce with Economics</p>
+            <section id="certifications" class="mb-12 md:mb-16 scroll-mt-24">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">My Training & Certifications</h2>
+                <p class="max-w-3xl mx-auto text-center text-gray-600 mb-10">My commitment to continuous learning is demonstrated through specialized training programs, enhancing my practical skills in diverse sectors.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="card p-6 rounded-lg">
+                        <h3 class="font-bold text-xl mb-2 text-amber-700">4-year Diploma - Trainee Associate (RAS/Q0103) in Retail</h3>
+                        <p class="text-gray-700 font-semibold">Skill India</p>
+                        <p class="text-sm text-gray-600">[Provide Dates if available, e.g., Month Year – Month Year]</p>
+                        <p class="text-gray-700 mt-2">I focused on retail operations, customer service, and sales processes, gaining hands-on experience in the retail environment.</p>
+                    </div>
+                    <div class="card p-6 rounded-lg">
+                        <h3 class="font-bold text-xl mb-2 text-amber-700">4-year Diploma - Trainee in IT Sector</h3>
+                        <p class="text-gray-700 font-semibold">Skill India</p>
+                        <p class="text-sm text-gray-600">[Provide Dates if available, e.g., Month Year – Month Year]</p>
+                        <p class="text-gray-700 mt-2">I gained foundational knowledge in IT systems, software, and technical support, developing practical troubleshooting abilities.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="timeline" class="mb-12 md:mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">My Proactive Journey: A Timeline of Growth</h2>
+                <div class="max-w-3xl mx-auto">
+                    <div class="relative pl-8 sm:pl-10 py-6 group">
+                        <div class="flex flex-col sm:flex-row items-start mb-1 group-last:hidden">
+                            <div class="flex flex-col items-center">
+                                <div class="w-8 h-8 rounded-full bg-amber-500 text-white flex items-center justify-center ring-4 ring-white">🎓</div>
+                                <div class="w-px h-24 bg-gray-300 sm:h-28"></div>
+                            </div>
+                            <div class="ml-6 sm:ml-8">
+                                <p class="font-bold text-lg text-gray-800">BBA Final Year Student</p>
+                                <p class="text-sm font-medium text-gray-600">J.L.N. College | June 2023 – May 2026 (Expected)</p>
+                                <p class="mt-2 text-gray-600">I am building a strong foundation in core business principles, management strategies, and organizational behavior.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative pl-8 sm:pl-10 py-6 group">
+                        <div class="flex flex-col sm:flex-row items-start mb-1 group-last:hidden">
+                            <div class="flex flex-col items-center">
+                                <div class="w-8 h-8 rounded-full bg-amber-500 text-white flex items-center justify-center ring-4 ring-white">💼</div>
+                                <div class="w-px h-24 bg-gray-300 sm:h-28"></div>
+                            </div>
+                            <div class="ml-6 sm:ml-8">
+                                <p class="font-bold text-lg text-gray-800">Freelancer - IT Services</p>
+                                <p class="text-sm font-medium text-gray-600">Self-Employed | June 2020 – January 2021</p>
+                                <p class="mt-2 text-gray-600">I provided technical solutions, managed budgets, and executed digital marketing, demonstrating my early entrepreneurial drive.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative pl-8 sm:pl-10 py-6 group">
+                           <div class="flex flex-col sm:flex-row items-start mb-1">
+                               <div class="flex flex-col items-center">
+                                   <div class="w-8 h-8 rounded-full bg-amber-500 text-white flex items-center justify-center ring-4 ring-white">📈</div>
+                               </div>
+                               <div class="ml-6 sm:ml-8">
+                                   <p class="font-bold text-lg text-gray-800">Digital Asset Analyst</p>
+                                   <p class="text-sm font-medium text-gray-600">Personal Initiative | January 2019 – December 2021</p>
+                                   <p class="mt-2 text-gray-600">I conducted in-depth research and analysis of emerging technologies, showcasing my strong analytical and self-learning capabilities.</p>
+                               </div>
+                           </div>
+                    </div>
+                </div>
+            </section>
 
-    <h3>Secondary (10th Grade)</h3>
-    <p>H.B.S.E. (Board of School Education Haryana), Government Model Senior Secondary School (Sector 28)</p>
-    <p>January 2019 – June 2020 | Percentage: 71.6%</p>
-    <p>Field of Study: General Secondary Education</p>
-  </section>
+            <section id="deep-dive" class="mb-12 md:mb-16">
+                <h2 class="text-3xl font-bold mb-2 text-center text-gray-800">Translating My Experience into HR Value</h2>
+                <p class="max-w-3xl mx-auto text-center text-gray-600 mb-10">This section deconstructs my diverse experiences to show their direct relevance to core HR functions. Use the tabs to explore how my past roles have prepared me for a future in HR.</p>
+                <div class="w-full max-w-4xl mx-auto">
+                    <div class="mb-4 flex flex-col sm:flex-row justify-center rounded-lg p-1 bg-gray-100 space-y-2 sm:space-y-0 sm:space-x-2">
+                        <button class="tab-button flex-1 py-2 px-4 rounded-md font-semibold active" onclick="openTab(event, 'freelance')">IT Freelancing</button>
+                        <button class="tab-button flex-1 py-2 px-4 rounded-md font-semibold" onclick="openTab(event, 'crypto')">Digital Asset Analysis</button>
+                        <button class="tab-button flex-1 py-2 px-4 rounded-md font-semibold" onclick="openTab(event, 'volunteer')">Volunteer Work</button>
+                    </div>
+                    <div id="freelance" class="tab-content card p-6 rounded-lg">
+                        <h3 class="font-bold text-xl mb-3 text-amber-700">Core Competencies from IT Freelancing</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start"><span class="text-amber-600 font-bold mr-2 mt-1">→</span><div><strong class="font-semibold text-gray-800">Process Optimization:</strong> I streamlined workflows for 5+ businesses, a skill directly applicable to improving HRIS and internal processes.</div></li>
+                            <li class="flex items-start"><span class="text-amber-600 font-bold mr-2 mt-1">→</span><div><strong class="font-semibold text-gray-800">Data Integrity & Compliance:</strong> I managed project budgets and financial records, demonstrating the attention to detail required for payroll, benefits, and HR compliance.</div></li>
+                            <li class="flex items-start"><span class="text-amber-600 font-bold mr-2 mt-1">→</span><div><strong class="font-semibold text-gray-800">Talent Attraction:</strong> I grew client audiences by 15% via social media, a technique transferable to employer branding and digital talent sourcing.</div></li>
+                        </ul>
+                    </div>
+                    <div id="crypto" class="tab-content card p-6 rounded-lg" style="display:none">
+                        <h3 class="font-bold text-xl mb-3 text-amber-700">Core Competencies from Digital Asset Analysis</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start"><span class="text-amber-600 font-bold mr-2 mt-1">→</span><div><strong class="font-semibold text-gray-800">Advanced Analytics:</strong> I conducted in-depth research on complex emerging technologies, a skill vital for HR analytics, talent market research, and policy development.</div></li>
+                            <li class="flex items-start"><span class="text-amber-600 font-bold mr-2 mt-1">→</span><div><strong class="font-semibold text-gray-800">Community Engagement:</strong> I fostered engagement in online communities, which is analogous to building organizational culture and managing employee feedback channels.</div></li>
+                            <li class="flex items-start"><span class="text-amber-600 font-bold mr-2 mt-1">→</span><div><strong class="font-semibold text-gray-800">Meticulous Record-Keeping:</strong> I maintained precise transaction logs, showcasing the accuracy needed for sensitive HR data and compliance audits.</div></li>
+                        </ul>
+                    </div>
+                    <div id="volunteer" class="tab-content card p-6 rounded-lg" style="display:none">
+                        <h3 class="font-bold text-xl mb-3 text-amber-700">Core Competencies from Volunteering</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start"><span class="text-amber-600 font-bold mr-2 mt-1">→</span><div><strong class="font-semibold text-gray-800">Administrative Excellence:</strong> I assisted peers by compiling, organizing, and verifying critical admission documents, a direct parallel to HR documentation and employee onboarding.</div></li>
+                            <li class="flex items-start"><span class="text-amber-600 font-bold mr-2 mt-1">→</span><div><strong class="font-semibold text-gray-800">Empathetic Support:</strong> I demonstrated a commitment to helping individuals navigate complex processes, a core tenet of a successful HR professional.</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-  <section>
-    <h2>Training &amp; Certifications</h2>
-    <p>My commitment to continuous learning is demonstrated through specialized training programs, enhancing my practical skills in diverse sectors.</p>
+            <section id="skills-chart" class="mb-12 md:mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">A Well-Rounded Skill Profile</h2>
+                <div class="card p-4 md:p-6 rounded-lg">
+                    <div class="chart-container">
+                        <canvas id="skillsRadarChart"></canvas>
+                    </div>
+                    <p class="text-center text-sm text-gray-500 mt-4">This chart visualizes the balance between my developed skills and my aspirational learning areas, highlighting my readiness for an entry-level role and my potential for future growth.</p>
+                </div>
+            </section>
 
-    <h3>4-year Diploma - Trainee Associate (RAS/Q0103) in Retail</h3>
-    <p>Skill India</p>
-    <p>[Provide Dates if available, e.g., Month Year – Month Year]</p>
-    <p>I focused on retail operations, customer service, and sales processes, gaining hands-on experience in the retail environment.</p>
+            <section id="languages" class="mb-12 md:mb-16 scroll-mt-24">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">My Language Proficiency</h2>
+                <p class="max-w-3xl mx-auto text-center text-gray-600 mb-10">My multilingual abilities enhance my capacity for effective communication in diverse professional environments.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                    <div class="card p-6 rounded-lg">
+                        <p class="text-4xl font-bold text-amber-600">🇬🇧</p>
+                        <p class="mt-2 font-semibold text-gray-700">English</p>
+                        <p class="text-sm text-gray-500">Advanced</p>
+                    </div>
+                    <div class="card p-6 rounded-lg">
+                        <p class="text-4xl font-bold text-amber-600">🇮🇳</p>
+                        <p class="mt-2 font-semibold text-gray-700">Hindi</p>
+                        <p class="text-sm text-gray-500">Proficient</p>
+                    </div>
+                    <div class="card p-6 rounded-lg">
+                        <p class="text-4xl font-bold text-amber-600">🗣️</p>
+                        <p class="mt-2 font-semibold text-gray-700">Maithili</p>
+                        <p class="text-sm text-gray-500">Proficient</p>
+                    </div>
+                </div>
+            </section>
 
-    <h3>4-year Diploma - Trainee in IT Sector</h3>
-    <p>Skill India</p>
-    <p>[Provide Dates if available, e.g., Month Year – Month Year]</p>
-    <p>I gained foundational knowledge in IT systems, software, and technical support, developing practical troubleshooting abilities.</p>
-  </section>
+            <section id="strategic-fit" class="bg-amber-50 rounded-lg p-8">
+                <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">My Strategic Fit: A Future-Ready HR Professional</h2>
+                <div class="grid md:grid-cols-2 gap-8 text-gray-700">
+                    <div>
+                        <h4 class="font-bold text-lg mb-2 text-amber-700 flex items-center"><span class="text-2xl mr-2">💡</span>Entrepreneurial Mindset</h4>
+                        <p>My freelance background demonstrates my proactivity, resourcefulness, and a problem-solving approach. I don't wait for instructions; I identify needs and deliver solutions, a valuable trait in a dynamic corporate environment.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2 text-amber-700 flex items-center"><span class="text-2xl mr-2">🤖</span>Tech-Forward Vision & Future Aspirations</h4>
+                        <p>My specific interest in integrating AI into HR processes is a significant differentiator. I am keen to explore areas like HR Analytics, Talent Management strategies, and Employee Engagement, demonstrating a proactive approach to the future of the profession and how to add strategic, data-driven value.</p>
+                    </div>
+                </div>
+            </section>
 
-  <section>
-    <h2>Proactive Journey: A Timeline of Growth</h2>
-    <h3>BBA Final Year Student</h3>
-    <p>J.L.N. College | June 2023 – May 2026 (Expected)</p>
-    <p>I am building a strong foundation in core business principles, management strategies, and organizational behavior.</p>
+        </main>
+        
+        <footer class="text-center mt-16 pt-8 border-t border-gray-200">
+            <p class="text-sm text-gray-500">Designed for optimal viewing on all devices. &copy; 2025 Interactive Profile Analysis.</p>
+        </footer>
 
-    <h3>Freelancer - IT Services</h3>
-    <p>Self-Employed | June 2020 – January 2021</p>
-    <p>I provided technical solutions, managed budgets, and executed digital marketing, demonstrating early entrepreneurial drive.</p>
+    </div>
 
-    <h3>Digital Asset Analyst</h3>
-    <p>Personal Initiative | January 2019 – December 2021</p>
-    <p>I conducted in-depth research and analysis of emerging technologies, showcasing strong analytical and self-learning capabilities.</p>
-  </section>
+    <script>
+        function openTab(event, tabName) {
+            let i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.classList.add("active");
+        }
 
-  <section>
-    <h2>Translating Experience into HR Value</h2>
-    <p>This section deconstructs my diverse experiences to show their direct relevance to core HR functions. Use the tabs to explore how my past roles have prepared me for a future in HR.</p>
-
-    <h3>Core Competencies from IT Freelancing</h3>
-    <ul>
-      <li><strong>Process Optimization:</strong> I streamlined workflows for 5+ businesses, a skill directly applicable to improving HRIS and internal processes.</li>
-      <li><strong>Data Integrity &amp; Compliance:</strong> I managed project budgets and financial records, demonstrating the attention to detail required for payroll, benefits, and HR compliance.</li>
-      <li><strong>Talent Attraction:</strong> I grew client audiences by 15% via social media, a technique transferable to employer branding and digital talent sourcing.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>A Well-Rounded Skill Profile</h2>
-    <p>This chart visualizes the balance between my developed skills and my aspirational learning areas, highlighting my readiness for an entry-level role and my potential for future growth.</p>
-  </section>
-
-  <section>
-    <h2>Language Proficiency</h2>
-    <p>My multilingual abilities enhance my capacity for effective communication in diverse professional environments.</p>
-    <ul>
-      <li>🇬🇧 English - Advanced</li>
-      <li>🇮🇳 Hindi - Proficient</li>
-      <li>🗣️ Maithili - Proficient</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>The Strategic Fit: A Future-Ready HR Professional</h2>
-    <h4>💡Entrepreneurial Mindset</h4>
-    <p>My freelance background demonstrates proactivity, resourcefulness, and a problem-solving approach. I don't wait for instructions; I identify needs and deliver solutions—a valuable trait in a dynamic corporate environment.</p>
-
-    <h4>🤖Tech-Forward Vision &amp; Future Aspirations</h4>
-    <p>My specific interest in integrating AI into HR processes is a significant differentiator. I am keen to explore areas like HR Analytics, Talent Management strategies, and Employee Engagement, demonstrating a proactive approach to the future of the profession and how I can add strategic, data-driven value.</p>
-  </section>
+        const ctx = document.getElementById('skillsRadarChart').getContext('2d');
+        const skillsRadarChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Problem-Solving', 'Client/People Skills', 'Data & Analytics', 'Technical Aptitude', 'HR Knowledge (Aspirational)'],
+                datasets: [{
+                    label: 'Skill Level',
+                    data: [8, 8.5, 7.5, 8, 6],
+                    backgroundColor: 'rgba(245, 158, 11, 0.2)',
+                    borderColor: 'rgba(245, 158, 11, 1)',
+                    pointBackgroundColor: 'rgba(245, 158, 11, 1)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgba(245, 158, 11, 1)'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                    return label.join(' ');
+                                } else {
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    r: {
+                        angleLines: {
+                            color: 'rgba(0, 0, 0, 0.1)'
+                        },
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.1)'
+                        },
+                        pointLabels: {
+                            font: {
+                                size: 12,
+                                weight: '500'
+                            },
+                            color: '#4a5568'
+                        },
+                        ticks: {
+                            backdropColor: 'transparent',
+                            stepSize: 2
+                        },
+                        min: 0,
+                        max: 10
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
